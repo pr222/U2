@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
-/*   ----- Base Style -----   */
+* {margin: 0; padding: 0;}
+
 html {
     font-size: 16px;
 }
-/*   ----- END of Base Style -----   */
 
 /***** TODO: Add display:grid for all pages. *****/
 /***** TODO: Add display:flex for any page. *****/
