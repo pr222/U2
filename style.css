@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/*   ----- Base Style -----   */
+html {
+    font-size: 16px;
+}
+/*   ----- END of Base Style -----   */
+
+/***** TODO: Add display:grid for all pages. *****/
+/***** TODO: Add display:flex for any page. *****/
+/***** TODO: Add transition & transform to any page, where applicable. *****/
+
+/*   ----- Layout -----   */
+
+/*   ----- END of Layout -----   */
+
+
+/*   ----- Navigation -----   */
+/* Placeholder for class thisPage for the nav menu */
+/* .thisPage */
+
+/*   ----- END of Navigation -----   */
+
+
+/*   ----- Main -----   */
+
+/*   ----- END of Main -----   */
+
+
+/*   ----- Footer -----   */
+
+/*   ----- END of Footer -----   */
+
+/***** TODO: Add 3 different Media Queries. *****/
+/***** TODO: Choose between mobile first or desctop first. *****/
+
+/*   ----- Media Queries -----   */
+
+/*   ----- END of Media Queries -----   */
