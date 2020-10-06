@@ -6,7 +6,7 @@ html {
     font-size: 16px;
 }
 
-/***** TODO: Add display:grid for all pages. *****/
+/***** TODO: Add display:grid for all pages. Min. two colums for desktop *****/
 /***** TODO: Add display:flex for any page. *****/
 /***** TODO: Add transition & transform to any page, where applicable. *****/
 
@@ -16,7 +16,7 @@ html {
 
 
 /*   ----- Navigation -----   */
-/* Placeholder for class thisPage for the nav menu */
+/* Placeholder below for the class thisPage for the nav menu */
 /* .thisPage */
 
 /*   ----- END of Navigation -----   */
@@ -31,7 +31,7 @@ html {
 
 /*   ----- END of Footer -----   */
 
-/***** TODO: Add 3 different Media Queries. *****/
+/***** TODO: Add >3 different Media Queries. *****/
 /***** TODO: Choose between mobile first or desctop first. *****/
 
 /*   ----- Media Queries -----   */

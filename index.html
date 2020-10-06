@@ -3,36 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Boxmodellen</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<!-- Add Title -->
-<!-- Add Q&A -->
-<!-- Add 1 relevant image -->
 <body>
     <nav>
         <ul>
-            <li><a href="index.html" class="thisPage">Hem</a></li>
-            <li><a href="page2.html">Sida 2</a></li>
-            <li><a href="page3.html">Sida 3</a></li>
+            <li><a href="index.html" class="thisPage">Boxmodellen</a></li>
+            <li><a href="page2.html">Navigering</a></li>
+            <li><a href="page3.html">Analys och krav</a></li>
         </ul>
     </nav>
     <header>
-
+        <h1>Boxmodellen</h1>
     </header>
     <main>
         <h1>Boxmodellen</h1>
-        <!-- Beskriv boxmodellen och ge en kort förklaring av var och en av de egenskaper som ingår i den. -->
         <img src="img/box.png" alt="Box med content-storlek, padding, border och margin">
         <p>Varje html element på webbsidan tolkas av webbläsaren som en <i>box</i>. Innersta delen av boxen består av själva innehållet i elementet, så som texten i rubriken eller paragraftexten. Med egenskapen <i>border</i> kan man lägga till en synlig kant runt innehållet, men eftersom kanten då ligger precis intill där innehållet slutar så vill man kanske lägga till en till egenskap, <i>padding.</i> </p>
         <p>Padding används för att göra utrymme mellan bordern och innehållet. Ifall elementet har en egen bakgrundsfärg så finns den inom hela området som ligger innanför bordern. Därutefter kan man lägga till egenskapen <i>margin</i> som lägger till en marginal runt hela boxen och som är helt transparent. Det är möjligt med alla dessa tre egenskaper att enbart påverka någon eller flera sidor utav boxen, alltså ovan- eller undersidan och till höger eller vänster om den. Det är även möjligt att påverka boxens höjd och bredd.</p>
         <h1>Boxsizing</h1>
-        <!-- Beskriv också skillnaden mellan värdena content-box och border-box för egenskapen box-sizing. -->
         <p>Inline-elementens storlek förhåller sig till storleken av själva innehållet, med undantag för bildelementet. Bildelementet och block-element kan ändra sin storlek genom <i>box-sizing</i>-egenskapen. <strong>Content-box</strong> är alltid det förvalda alternativet. Då om man ändrar på <i>width</i> eller <i>height</i> så utgår dom måtten ifrån och ändrar storleken på den delen där innehållet ligger. Därefter läggs eventuell padding, border och marginal till på den totala storleken utav boxen.</p>
         <p><strong>Border-box</strong> ger däremot totala bredden och höjden för innehåll, padding och border. Endast marginalen utanför behöver tas med i beräkningen när man då planerar layouten. Med värdet border-box är det lättare att välja sina dimensioner och det är också ofta en fördel att använda procent för att ange storlek för en mer responsiv desing.</p>
     </main>
     <footer>
-
+        <p>Linnéuniversitetet, 1ME321 Webbteknik 1, uppgift U2. </p>
     </footer>
 </body>
 </html>
