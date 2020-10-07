@@ -1,16 +1,21 @@
 @charset "UTF-8";
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     font-size: 16px;
 }
 
-/***** TODO: Add display:grid for all pages. Min. two colums for desktop *****/
-/***** TODO: Add display:flex for any page. *****/
-/***** TODO: Add transition & transform to any page, where applicable. *****/
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 auto;
+    max-width: 850px;
 }
 
+/* Style for header */
 header h1 {
     font-family: 'Righteous', cursive;
     font-size: 3rem;
@@ -18,20 +23,67 @@ header h1 {
     color: darkcyan;
 }
 
+/* Style for main page */
 h1, h2, h3 {
     font-family: 'Raleway', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 15px;
+    margin-left: 5px;
 }
 
+p {
+    margin: 5px 15px 0px 15px;
+}
+
+main a:link {
+    color: darkcyan;
+}
+
+main a:visited {
+    color: rgb(64, 55, 121);
+}
+
+main a:hover, a:active {
+    color: darkslategray;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.images {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery img {
+    height: 100%;
+}
+
+.gallery img:hover {
+    transform: rotate(15deg) scale(1.5);
+}
+
+#persona {
+    flex-direction: column;
+    align-self: center;
+    flex: 0 1 auto;
+}
 
 /*   ----- Navigation -----   */
 nav ul {
     list-style: none;
     margin: 0;
+    padding: 5px;
+}
+
+nav ul li {
+    padding: 5px;
 }
 
 nav a {
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.45rem;
 }
 
 nav a:link, a:visited {
@@ -47,11 +99,16 @@ nav a.thisPage {
 }
 /*   ----- END of Navigation -----   */
 
+
+/* TODO: Add images with flexbox for page2 */
+/* TODO: Add transition & transform to images. */
+
+
 /*   ----- Footer -----   */
 footer {
-    background-color: #fef2e2;
+    background-color: #f8debb;
     border-top: 2px dotted burlywood;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
 }
 
 footer p {
@@ -60,8 +117,46 @@ footer p {
 }
 /*   ----- END of Footer -----   */
 
-/***** TODO: Add >3 different Media Queries. *****/
-/***** TODO: Choose between mobile first or desctop first. *****/
+/***** TODO: Add >3 different Media Queries. Mobile first *****/
+
 /*   ----- Media Queries -----   */
 
 /*   ----- END of Media Queries -----   */
+
+/*
+#persona {
+    float: right;
+}
+*/
+
+/*
+#layout {
+    display: grid;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-columns: 50px min-content auto 50px;
+    grid-template-areas: 
+    "header  header  header  header"
+    ".       nav     main    ."
+    "footer  footer  footer  footer";
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(244, 230, 197);
+}
+
+nav {
+    grid-area: nav;
+    background-color: #fffee2;
+}
+
+main {
+    grid-area: main;
+    background-color: #fff1e1;
+}
+
+footer {
+    grid-area: footer;
+}
+
+*/
