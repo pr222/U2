@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-* {margin: 0; padding: 0;}
-
 html {
     font-size: 16px;
 }
@@ -9,31 +7,61 @@ html {
 /***** TODO: Add display:grid for all pages. Min. two colums for desktop *****/
 /***** TODO: Add display:flex for any page. *****/
 /***** TODO: Add transition & transform to any page, where applicable. *****/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-/*   ----- Layout -----   */
+header h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 3rem;
+    text-align: center;
+    color: darkcyan;
+}
 
-/*   ----- END of Layout -----   */
+h1, h2, h3 {
+    font-family: 'Raleway', Calibri, 'Trebuchet MS', sans-serif;
+}
 
 
 /*   ----- Navigation -----   */
-/* Placeholder below for the class thisPage for the nav menu */
-/* .thisPage */
+nav ul {
+    list-style: none;
+    margin: 0;
+}
 
+nav a {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+nav a:link, a:visited {
+    color: cadetblue;
+}
+
+nav a:hover, a:active {
+    color: darkcyan;
+}
+
+nav a.thisPage {
+    color: darksalmon;
+}
 /*   ----- END of Navigation -----   */
 
-
-/*   ----- Main -----   */
-
-/*   ----- END of Main -----   */
-
-
 /*   ----- Footer -----   */
+footer {
+    background-color: #fef2e2;
+    border-top: 2px dotted burlywood;
+    padding-bottom: 50px;
+}
 
+footer p {
+    font-size: 0.75rem;
+    text-align: center;
+}
 /*   ----- END of Footer -----   */
 
 /***** TODO: Add >3 different Media Queries. *****/
 /***** TODO: Choose between mobile first or desctop first. *****/
-
 /*   ----- Media Queries -----   */
 
 /*   ----- END of Media Queries -----   */
