@@ -161,8 +161,8 @@ img {
 
 /* Style for footer */
 footer {
-    background-color: #f8debb;
-    border-top: 2px dotted burlywood;
+    background-color: #fff0dd;
+    border-top: 2px dotted rgb(247, 210, 163);
     padding-bottom: 20px;
 }
 
@@ -175,43 +175,93 @@ footer p {
 
 /*   ----- Media Queries -----   */
 
-/*   ----- END of Media Queries -----   */
+@media screen and (min-width: 450px) {
+    #navIcon {
+        display: none;
+    }
 
-/*
-.gallery {
-    display: flex;
-    justify-content: center;
-}
-*/
+    #navCheckbox ~ nav {
+        display: block;
+        background-color: rgb(247, 247, 247);
+    }
 
-/*
-#layout {
-    display: grid;
-    grid-template-rows: min-content min-content min-content;
-    grid-template-columns: 50px min-content auto 50px;
-    grid-template-areas: 
-    "header  header  header  header"
-    ".       nav     main    ."
-    "footer  footer  footer  footer";
-}
+    nav a {
+        font-size: 1.25rem;
+    }
 
-header {
-    grid-area: header;
-    background-color: rgb(244, 230, 197);
-}
+    nav ul {
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 
-nav {
-    grid-area: nav;
-    background-color: #fffee2;
+    nav li:hover, li:active {
+        background-color: rgb(255, 241, 205);
+    }
+
 }
 
-main {
-    grid-area: main;
-    background-color: #fff1e1;
+@media screen and (min-width: 600px) {
+    #box {
+        float: right;
+        width: 300px;
+    }
+    #persona {
+        float: left;
+        width: 300px; 
+    }
+    .gallery {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0px 20px 0px;
+    }
 }
 
-footer {
-    grid-area: footer;
-}
+/* Max-sized version */
+@media screen and (min-width: 800px) {
+    nav a {
+        font-size: 1.5rem;
+    }
 
-*/
+    nav ul {
+        display: flex;
+        flex-direction: column; 
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        align-self: stretch;
+    }
+
+    body {
+        display: grid;
+        grid-template-rows: min-content min-content min-content;
+        grid-template-columns: 50px auto auto 50px;
+        grid-template-areas: 
+        "header  header  header  header"
+        ".       nav     main    ."
+        "footer  footer  footer  footer";
+        grid-column-gap: 20px;
+    }
+
+    header {
+        grid-area: header;
+    }
+    nav {
+        grid-area: nav;
+    }
+    main {
+        grid-area: main;
+        padding-bottom: 30px;
+    }
+    footer {
+        grid-area: footer;
+        padding-bottom: 70px;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        padding-bottom: 50px;
+    }
+}
