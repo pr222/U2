@@ -207,24 +207,32 @@ footer p {
         background-color: rgb(255, 241, 205);
     }
 
+    main {
+        margin: 0 20px;
+    }
+
 }
 
 /* Change presentation of images */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 660px) {
     #box {
         float: right;
-        width: 350px;
+        width: 300px;
         margin: 20px;
     }
     #persona {
         float: left;
-        width: 300px; 
+        width: 250px; 
     }
     
     .gallery {
         display: flex;
         justify-content: center;
         margin: 20px 0px 20px 0px;
+    }
+
+    main {
+        margin: 0 70px;
     }
     
 }
@@ -293,6 +301,10 @@ footer p {
 
     #persona2 {
         display: block;
+    }
+
+    main {
+        margin: 0 auto;
     }
 
 }
